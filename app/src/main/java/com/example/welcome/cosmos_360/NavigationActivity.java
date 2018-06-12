@@ -59,6 +59,7 @@ public class NavigationActivity extends AppCompatActivity {
     private void setFragment(android.support.v4.app.Fragment fragment){
         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.main_frame, fragment);
+        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
 }
