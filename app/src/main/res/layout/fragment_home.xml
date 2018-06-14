@@ -2,12 +2,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_cosmos"
     tools:context="com.example.welcome.cosmos_360.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello_home_fragment" />
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/home_logo"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/logo_cosmos"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_below="@+id/home_logo"
+        android:id="@+id/imageDivider"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/contentText"
+        android:layout_below="@+id/imageDivider"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="19dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="A National Level 24 hours CAD design hackathon based on Fusion 360 (a 3D CAD/CAM design software) brought to you by roboVITics, Autodesk and Airbus."
+        android:textColor="@color/colorWhite"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_below="@+id/contentText"
+        android:layout_height="1dp"
+        android:id="@+id/contentdivider"
+        android:background="@color/colorWhite"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/contentdivider">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/link_item_iconshome"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    </ScrollView>
 
 </FrameLayout>

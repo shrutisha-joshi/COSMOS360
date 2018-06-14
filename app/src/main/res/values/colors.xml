@@ -9,4 +9,6 @@
     <color name="colorWhiteTransparent">#80ffffff</color>
     <color name="colorTransparent">#00ffffff</color>
 
+    <color name="colorLine">#dad6d6</color>
+
 </resources>

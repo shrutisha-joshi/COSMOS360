@@ -21,11 +21,12 @@ public class NavigationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
-
-
-
         mMainFrame = (FrameLayout)findViewById(R.id.main_frame);
         mMainNav = (BottomNavigationView) findViewById(R.id.main_nav);
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.main_frame, new HomeFragment()).commit();
+        }
 
         homeFragment = new HomeFragment();
         scheduleFragment = new ScheduleFragment();

@@ -6,4 +6,5 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro">A National Level 24 hours CAD design hackathon based on Fusion 360 (a 3D CAD/CAM design software) brought to you by roboVITics, Autodesk and Airbus.</string>
 </resources>

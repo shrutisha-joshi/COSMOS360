@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -22,6 +23,9 @@ public class ScheduleFragment extends Fragment {
 
     ViewPager viewPager;
     ViewPagerAdapter viewPagerAdapter;
+    Button day1button;
+    Button day2button;
+
 
     public ScheduleFragment() {
         // Required empty public constructor
@@ -44,6 +48,8 @@ public class ScheduleFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_schedule, container, false);
         View view = inflater.inflate(R.layout.fragment_schedule, container, false);
 
+            day1button = (Button) view.findViewById(R.id.day1button);
+            //day2button = (Button) view.findViewById(R.id.day2button);
 
             viewPager = (ViewPager) view.findViewById(R.id.viewpager);
             viewPagerAdapter = new ViewPagerAdapter(getChildFragmentManager());
@@ -67,6 +73,7 @@ public class ScheduleFragment extends Fragment {
         @Override
         public Fragment getItem(int position) {
             if(position == 0){
+
                 return Schedule_Day1Frag.newInstance();
             }
             else {

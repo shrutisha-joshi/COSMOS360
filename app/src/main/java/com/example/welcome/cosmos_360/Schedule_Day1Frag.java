@@ -18,7 +18,7 @@ public class Schedule_Day1Frag extends Fragment {
         // Required empty public constructor
     }
 
-    public static final String PAGE_TITLE = "Tab1";
+    public static final String PAGE_TITLE = "Day 1";
 
     public static Schedule_Day1Frag newInstance() {
         Schedule_Day1Frag fragment = new Schedule_Day1Frag();

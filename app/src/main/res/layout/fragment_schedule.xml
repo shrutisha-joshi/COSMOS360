@@ -2,32 +2,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_cosmos"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.welcome.cosmos_360.ScheduleFragment">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:background="@color/colorTransparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@color/colorTransparent"
         app:layout_scrollFlags="scroll|enterAlways"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_margin="8dp">
+
+           <Button
+               android:id="@+id/day1button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="50dp"
+               android:layout_marginRight="30dp"
+               android:background="@drawable/button_border"
+               android:text="Day 1"
+               android:textColor="@color/colorWhite" />
+
+           <Button
+               android:id="@+id/day2button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="40dp"
+               android:textColor="@color/colorWhite"
+               android:background="@drawable/button_border"
+               android:text="Day 2" />
+
+       </LinearLayout>
 
     <!-- TODO: Update blank fragment layout -->
-    <android.support.design.widget.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tabLayout"
-        android:background="@color/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    </android.support.design.widget.TabLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_marginTop="56dp"
-        android:layout_height="508dp"></android.support.v4.view.ViewPager>
+        android:layout_marginTop="52dp"
+        android:layout_height="512dp"></android.support.v4.view.ViewPager>
+
+
 
 </FrameLayout>

@@ -2,12 +2,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorTransparent"
     tools:context="com.example.welcome.cosmos_360.Schedule_Day2Frag">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
 
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.github.vipulasri.timelineview.TimelineView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            app:marker="@mipmap/ic_timeline"
+            app:markerSize="20dp"
+            app:lineSize="1dp"
+            app:line="@color/colorLine"
+            />
+
+        <TextView
+            android:textColor="@color/colorLine"
+            android:text="02:00"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:text="Midnight Snacks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.github.vipulasri.timelineview.TimelineView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            app:marker="@mipmap/ic_timeline"
+            app:markerSize="20dp"
+            app:lineSize="1dp"
+            app:line="@color/colorLine"
+            />
+
+        <TextView
+            android:textColor="@color/colorLine"
+            android:text="08:00"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:text="Breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.github.vipulasri.timelineview.TimelineView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            app:marker="@mipmap/ic_timeline"
+            app:markerSize="20dp"
+            app:lineSize="1dp"
+            app:line="@color/colorLine"
+            />
+
+        <TextView
+            android:textColor="@color/colorLine"
+            android:text="10:00"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:text="Hack Ends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.github.vipulasri.timelineview.TimelineView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            app:marker="@mipmap/ic_timeline"
+            app:markerSize="20dp"
+            app:lineSize="1dp"
+            app:line="@color/colorLine"
+            />
+
+        <TextView
+            android:textColor="@color/colorLine"
+            android:text="10:00"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:text="Judging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
 </FrameLayout>
