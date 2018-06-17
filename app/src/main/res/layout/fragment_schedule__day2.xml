@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorTransparent"
-    tools:context="com.example.welcome.cosmos_360.Schedule_Day2Frag">
+    tools:context="com.robovitics.cosmos360.cosmos_360.Schedule_Day2Frag">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:paddingLeft="30dp"
-            app:marker="@mipmap/ic_timeline"
+            app:marker="@drawable/circle"
             app:markerSize="20dp"
             app:lineSize="1dp"
             app:line="@color/colorLine"
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:paddingLeft="30dp"
-            app:marker="@mipmap/ic_timeline"
+            app:marker="@drawable/circle"
             app:markerSize="20dp"
             app:lineSize="1dp"
             app:line="@color/colorLine"
@@ -93,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:paddingLeft="30dp"
-            app:marker="@mipmap/ic_timeline"
+            app:marker="@drawable/circle"
             app:markerSize="20dp"
             app:lineSize="1dp"
             app:line="@color/colorLine"
@@ -126,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:paddingLeft="30dp"
-            app:marker="@mipmap/ic_timeline"
+            app:marker="@drawable/circle"
             app:markerSize="20dp"
             app:lineSize="1dp"
             app:line="@color/colorLine"

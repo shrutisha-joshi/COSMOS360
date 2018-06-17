@@ -1,4 +1,4 @@
-package com.example.welcome.cosmos_360;
+package com.robovitics.cosmos360.cosmos_360;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.welcome.cosmos_360", appContext.getPackageName());
+        assertEquals("com.robovitics.cosmos360.cosmos_360", appContext.getPackageName());
     }
 }

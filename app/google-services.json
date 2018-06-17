@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "851690013932",
+    "firebase_url": "https://cosmos360-e2b8e.firebaseio.com",
+    "project_id": "cosmos360-e2b8e",
+    "storage_bucket": "cosmos360-e2b8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851690013932:android:c3b9bc42b2830b5b",
+        "android_client_info": {
+          "package_name": "com.robovitics.cosmos360.cosmos_360"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851690013932-et7rvsvv4bdf98u01f14vr44hbemhk98.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "851690013932-et7rvsvv4bdf98u01f14vr44hbemhk98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUV0cFfMJimFaovj4fG-YAlIb0ruEVQk8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

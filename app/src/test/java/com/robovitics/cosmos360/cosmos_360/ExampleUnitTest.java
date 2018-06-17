@@ -1,4 +1,4 @@
-package com.example.welcome.cosmos_360;
+package com.robovitics.cosmos360.cosmos_360;
 
 import org.junit.Test;
 

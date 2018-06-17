@@ -2,12 +2,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.welcome.cosmos_360.ProfileFragment">
+    android:background="@drawable/bg_cosmos"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.robovitics.cosmos360.cosmos_360.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello_profile_fragment" />
+        android:layout_height="wrap_content"
+        >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarprofile"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#BF000000"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@+id/toolbarprofile"
+        android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:fontFamily="@font/opensans_regular"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:text="QR Code" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/QRimage"
+            android:layout_below="@id/textView"/>
+    </RelativeLayout>
+
+    </ScrollView>
+    </RelativeLayout>
 
 </FrameLayout>

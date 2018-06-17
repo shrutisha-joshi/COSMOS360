@@ -1,13 +1,13 @@
-package com.example.welcome.cosmos_360;
+package com.robovitics.cosmos360.cosmos_360;
 
 
-import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.design.widget.TabItem;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,8 +23,9 @@ public class ScheduleFragment extends Fragment {
 
     ViewPager viewPager;
     ViewPagerAdapter viewPagerAdapter;
-    Button day1button;
-    Button day2button;
+    TabLayout tabLayout;
+    TabItem tabDay1;
+    TabItem tabDay2;
 
 
     public ScheduleFragment() {
@@ -48,12 +49,15 @@ public class ScheduleFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_schedule, container, false);
         View view = inflater.inflate(R.layout.fragment_schedule, container, false);
 
-            day1button = (Button) view.findViewById(R.id.day1button);
-            //day2button = (Button) view.findViewById(R.id.day2button);
-
+            Toolbar toolbar = view.findViewById(R.id.toolbar);
+            toolbar.setTitle(getResources().getString(R.string.nav_schedule));
+            tabLayout = view.findViewById(R.id.tabLayout);
+            tabDay1 = view.findViewById(R.id.tabday1);
+            tabDay2 = view.findViewById(R.id.tabday2);
             viewPager = (ViewPager) view.findViewById(R.id.viewpager);
             viewPagerAdapter = new ViewPagerAdapter(getChildFragmentManager());
             viewPager.setAdapter(viewPagerAdapter);
+            viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
             return view;
     }
 

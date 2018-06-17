@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.welcome.cosmos_360.NavigationActivity">
+    tools:context="com.robovitics.cosmos360.cosmos_360.NavigationActivity">
 
     <FrameLayout
         android:id="@+id/main_frame"
