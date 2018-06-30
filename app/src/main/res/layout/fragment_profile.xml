@@ -33,21 +33,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         >
-        <TextView
-            android:id="@+id/textView"
-            android:fontFamily="@font/opensans_regular"
-            android:textSize="20sp"
-            android:layout_width="match_parent"
-            android:textColor="@color/colorWhite"
-            android:layout_height="wrap_content"
-            android:text="QR Code" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:id="@+id/QRimage"
-            android:layout_below="@id/textView"/>
+            android:id="@+id/QRimage" />
     </RelativeLayout>
 
     </ScrollView>
